@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PokéAPI Pokédex (p5.js)</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <h1>PokéAPI Pokédex</h1>
+
+    <div class="row">
+      <input id="query" type="text" value="pikachu" />
+      <button id="go">Fetch</button>
+      <button id="rand">Random (1–151)</button>
+    </div>
+
+    <div id="status" class="status">Ready.</div>
+
+    <div id="canvas-holder"></div>
+    <p class="hint">Tip: Enter a Pokémon name or ID (e.g. <b>25</b>, <b>pikachu</b>, <b>bulbasaur</b>). Press <b>S</b> to save PNG.</p>
+  </div>
+
+  <script src="sketch.js"></script>
+</body>
+</html>
